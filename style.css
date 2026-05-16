@@ -10,6 +10,7 @@
 body{
     background: #f5f5f5;
     color: #222;
+    
 }
 
 /* HERO SECTION */
@@ -30,7 +31,9 @@ body{
     border-radius: 50%;
     border: 5px solid white;
     margin-bottom: 20px;
+    object-fit: cover;
 }
+
 
 .hero h1{
     font-size: 50px;

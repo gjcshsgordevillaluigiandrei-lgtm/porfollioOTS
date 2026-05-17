@@ -4,33 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Luigi Portfolio</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- ICONS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- NAVBAR -->
+    <header class="header">
 
-        <div class="hero-content">
+        <a href="#" class="logo">Portfolio.</a>
 
-            <img src="pro.jpg" alt="Profile Photo" class="profile-img">
+        <nav class="navbar">
 
-            <h1>Luigi Andrei</h1>
+            <button class="nav-btn active" data-section="home">
+                Home
+            </button>
 
-            <p class="tagline">
-                Web Developer | Student | Designer
-            </p>
+            <button class="nav-btn" data-section="about">
+                About
+            </button>
 
-            <!-- BUTTONS -->
-            <div class="buttons">
+            <button class="nav-btn" data-section="projects">
+                Projects
+            </button>
 
-                <button id="aboutBtn">About Me</button>
+            <button class="nav-btn" data-section="contact">
+                Contact
+            </button>
 
-                <button id="projectBtn">Projects</button>
+        </nav>
 
-                <button id="contactBtn">Contact</button>
+    </header>
+
+    <!-- HOME -->
+    <section class="section active-section" id="home">
+
+        <div class="home-container">
+
+            <div class="home-text">
+
+                <h1>Hi, I'm <span>Luigi Andrei</span></h1>
+
+                <h3>Future Frontend Developer</h3>
+
+                <p>
+                    I know as a student athete who balance academic
+                    and playing my sports i want BASKETBALL.
+                </p>
+
+                <div class="socials">
+
+    <a href="https://www.facebook.com/xuno.imy" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://github.com/gjcshsgordevillaluigiandrei-lgtm/porfollioOTS" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.instagram.com/an.dreif/" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+</div>
+
+            </div>
+
+            <div class="home-image">
+
+                <img src="pro.jpg" alt="Profile Photo">
 
             </div>
 
@@ -39,38 +89,67 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about" id="about">
+    <section class="section" id="about">
 
-        <h2>About Me</h2>
+        <div class="content-box">
 
-        <p>
-            I am a passionate student who loves creating websites
-            and learning programming languages like HTML, CSS,
-            JavaScript, PHP, and C++.
-        </p>
+            <h2>About Me</h2>
+
+            <p>
+                I am a student-athlete who balances academics and sports with discipline, 
+                focus, and dedication. Being involved in athletics has taught me teamwork, 
+                perseverance, and the importance of pushing myself beyond limits, both on and off the field.
+                At the same time, 
+                 am developing my skills in web development with the goal of becoming a future web developer.  
+                 I enjoy learning how websites and applications are built, and I am constantly improving my knowledge in HTML, CSS, JavaScript, and other modern technologies. My goal is to combine my discipline as an athlete with my passion for technology to build creative and useful digital projects.
+            </p>
+
+        </div>
 
     </section>
 
     <!-- PROJECTS -->
-    <section class="projects" id="projects">
+    <section class="section" id="projects">
 
-        <h2>My Projects</h2>
+        <h2 class="title">Projects</h2>
 
         <div class="project-container">
 
-            <div class="card">
+            <div class="project-card">
+
+                <i class="fa-solid fa-code"></i>
+
                 <h3>Portfolio Website</h3>
-                <p>Responsive portfolio website project.</p>
+
+                <p>
+                    Responsive portfolio website with animations
+                    and modern design.
+                </p>
+
             </div>
 
-            <div class="card">
+            <div class="project-card">
+
+                <i class="fa-solid fa-book"></i>
+
                 <h3>Library System</h3>
-                <p>Book management system using PHP.</p>
+
+                <p>
+                    PHP project for managing books and borrowers.
+                </p>
+
             </div>
 
-            <div class="card">
-                <h3>Student App</h3>
-                <p>Simple MVC student management system.</p>
+            <div class="project-card">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                <h3>Student System</h3>
+
+                <p>
+                    MVC student management system using PHP & MySQL.
+                </p>
+
             </div>
 
         </div>
@@ -78,16 +157,24 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact" id="contact">
+    <section class="section" id="contact">
 
-        <h2>Contact Me</h2>
+        <div class="content-box">
 
-        <p>Email: luigi@example.com</p>
-        <p>GitHub: github.com/luigiandrei</p>
+            <h2>Contact Me</h2>
+
+            <p>Email: luigiandrei.gordevilla@cvsu.edu.ph</p>
+
+            <p>GitHub: LuigiAndreiGordevilla</p>
+
+            <p>Facebook: facebook.com/xuno.imy</p>
+
+        </div>
 
     </section>
 
+    <!-- JS -->
     <script src="script.js"></script>
 
 </body>
-</html>
+</html> 

@@ -1,28 +1,32 @@
 // script.js
 
-// ABOUT BUTTON
-document.getElementById("aboutBtn").addEventListener("click", function(){
+const buttons = document.querySelectorAll(".nav-btn");
+const sections = document.querySelectorAll(".section");
 
-    document.getElementById("about").scrollIntoView({
-        behavior: "smooth"
-    });
+buttons.forEach(button => {
 
-});
+    button.addEventListener("click", () => {
 
-// PROJECT BUTTON
-document.getElementById("projectBtn").addEventListener("click", function(){
+        // REMOVE ACTIVE BUTTON
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
 
-    document.getElementById("projects").scrollIntoView({
-        behavior: "smooth"
-    });
+        // ADD ACTIVE BUTTON
+        button.classList.add("active");
 
-});
+        // HIDE ALL SECTIONS
+        sections.forEach(section => {
+            section.classList.remove("active-section");
+        });
 
-// CONTACT BUTTON
-document.getElementById("contactBtn").addEventListener("click", function(){
+        // SHOW SELECTED SECTION
+        const target = button.getAttribute("data-section");
 
-    document.getElementById("contact").scrollIntoView({
-        behavior: "smooth"
+        document
+        .getElementById(target)
+        .classList.add("active-section");
+
     });
 
 });
